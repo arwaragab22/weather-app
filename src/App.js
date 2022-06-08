@@ -16,7 +16,7 @@ class App extends Component {
   show = async (e, a, b) => {
     e.preventDefault();
     const response = await fetch(
-      ` http://api.openweathermap.org/data/2.5/weather?q=${a}%2C${b}&appid=d6d0ff331257995b864b389cefc14fd7`
+      ` https://api.openweathermap.org/data/2.5/weather?q=${a}%2C${b}&appid=d6d0ff331257995b864b389cefc14fd7`
     );
     const data = await response.json();
     console.log(a, b);
